@@ -1,0 +1,28 @@
+
+<script Language="JavaScript">
+   
+    function about_us()
+   {
+       document.getElementById('content').innerHTML=document.getElementById('about_us').innerHTML;
+   }
+   
+   function logout(){
+       
+       alert("You have been logged out successfully");
+   }
+</script>
+
+<body>
+  <div id="nav"><br>
+      
+            <ul class="topnav">
+                <b>
+                    
+                    <li><a href="Logout"><h2>Logout</h2></a></li>
+                        <li onclick="about_us()"><a href="#about_us"><h2>Contact</h2></a></li>
+                        <li><a href="category.jsp"><h2>Category</h2></a></li>
+            <!--<li class="icon">-->
+                </b>
+            </ul>
+        </div>
+		</body>

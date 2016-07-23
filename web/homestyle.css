@@ -1,0 +1,79 @@
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('FontLobster.otf') format('opentype');
+}
+
+body{
+    margin: 0 auto;
+    background-image: url("image2.png");
+    /*box-shadow: inset 0 0 0 1000px rgba(400,400,400,0.5);*/
+    /*background-color: rgba(200,200,200,0.3);*/
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+}
+.contain{
+    width: 100%;
+    height:75px;
+    border-radius: 0;
+    margin-top: -60px;
+    margin-bottom: 30px; 
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+h1{
+    font-size: 55px;
+    font-family: Lobster;
+}
+.container{
+    padding: 10px;
+    width: 95%;
+    height: 470px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.7);
+    margin-top:100px;
+    border-radius: 4px;
+    
+}
+.about{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: justify;
+    margin-left: 650px;
+    color: white;
+}
+.image{
+    margin-top: -430px;
+    margin-left: 40px;
+    
+}
+.userlogin{
+    padding: 15px 30px;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    background-color: #2ECC71;
+    border-bottom: 4px solid #27AE60;
+    height: 40px;
+    width: 150px;
+    font-family: Lobster;
+    margin-left: 950px;
+    margin-top: -80px;
+}
+.userlogin:hover{
+    background-color: #222;
+    border-bottom: 4px solid #000;
+    color: white;
+}
+
+h2{
+  color: white;  
+}
+a{
+    color: white;
+}
+.a:hover{
+    color: blueviolet;
+}

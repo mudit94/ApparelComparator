@@ -1,0 +1,24 @@
+
+<script Language="JavaScript">
+   
+    function feedback()
+   {
+       document.getElementById('contentfeed').innerHTML=document.getElementById('contact').innerHTML;
+   }
+   
+   
+</script>
+
+<body>
+  <div id="nav"><br>
+      
+            <ul class="topnav">
+                <li onclick="Logout"><a href="Login.jsp">Logout</a></li>
+            <li onclick="feedback()"><a href="#contact">Contact</a></li>
+            <li><a href="category.jsp">Category</a></li>
+            
+            <!--<li class="icon">-->
+            
+            </ul>
+        </div>
+		</body>

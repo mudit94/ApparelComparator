@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 Jun, 2016, 10:51:57 PM
+    Author     : abc
+*/
+@font-face {
+  font-family: 'Lobster';
+  src: url('FontLobster.otf') format('opentype');
+}
+
+body{
+    margin: 0 ;
+    background-image: url("image3.png");
+    /*box-shadow: inset 0 0 0 1000px rgba(400,400,400,0.5);*/
+    /*background-color: rgba(200,200,200,0.3);*/
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+}
+.contain{
+    width: 100%;
+    height:75px;
+    border-radius: 0;
+    margin-top: -60px;
+    margin-bottom: 30px; 
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+h1{
+    font-size: 55px;
+    font-family: Lobster;
+}
+.container{
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.7);
+    margin-top:150px;
+    border-radius: 4px;
+}
+.container img{
+    width: 120px;
+    height:120px;
+    border-radius: 20px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+input[type="text"],input[type="password"]{
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding-left: 50px;
+}
+.form-input::before{
+    content: "\f007";
+    position: absolute;
+    font-family: fantasy;
+    padding-left: 5px;
+    color: #9B59B6;
+    padding-top: 7px;
+    font-size: 35px;
+}
+.form-input:nth-child(2)::before{
+    content: "\f023";
+}
+.btn-login{
+    padding: 15px 30px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    background-color: #2ECC71;
+    border-bottom: 4px solid #27AE60;
+}
+.btn-login:hover{
+    background-color: #222;
+    border-bottom: 4px solid #000;
+    color: white;
+}
+
+h2{
+  color: white;  
+}
+a{
+    color: white;
+}
+.a:hover{
+    color: blueviolet;
+}
+#user{
+	background-image: url(user2.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#user:focus{
+	background-image: url(user2.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#pass{
+	background-image: url(password.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#pass:focus{
+	background-image: url(password.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+form input:required{
+            background: #FFFFFF url('symbol.png') no-repeat right center;
+        }
+        form input:focus:invalid{
+            background: #FFFFFF url('invalid.png') no-repeat right center;
+            border: solid #CD3F33 2px;
+            background-size:15px 15px;
+        }
+        form input:focus:valid{
+            background: #FFFFFF url('valid.png') no-repeat right center;
+            background-size:15px 15px;
+            border: solid #2A9942 2px;
+        }
+form input:hover+p{visibility:visible;
+margin-left:415px;
+margin-top:-55px;
+margin-right:40px;
+
+text-align:right;
+position:relative;
+clear:both;
+color:#CD3F33;}
+form p{
+visibility:hidden;}
+form input:focus:valid+p{visibility:hidden;}

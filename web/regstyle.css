@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Jun, 2016, 2:52:04 PM
+    Author     : abc
+*/
+@font-face {
+  font-family: 'Lobster';
+  src: url('FontLobster.otf') format('opentype');
+}
+        body{
+            background-image: url("image3.png");
+            background-size: 100% 1000px;
+        }
+        .container{
+            width: 100%;
+             height:75px;
+             border-radius: 0;
+             margin-top: 20px;
+             margin-bottom: 30px; 
+             background-color:  #0d0d0d;
+             color: white;
+             
+        }
+        h1{
+            font-size: 55px;
+            color: white;
+            text-align: center;
+            font-family: Lobster;
+            
+        }
+        form{
+            width: 65%;
+            height: 450px;
+            background-color: rgba(51,51,51,0.8);
+            margin-top: 70px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+                     
+        }     
+        form input{
+            
+            display: block;
+            width: 40%;
+            height: 40px;
+            margin-left: 30px;
+            margin-right: auto;
+            margin-bottom: 20px;      
+            font-family: myfont;   
+            font-size: 20px;
+            color: black;
+        } 
+        .btn-login{
+            font-size: 25px;
+            color: #000;
+            border-radius: 10px;
+            border: none;
+            background-color: #2ECC71;
+            border-bottom: 4px solid #27AE60;
+        }
+        .btn-login:hover{
+            background-color: #666666;
+            border-bottom: 4px solid #4d4d4d;
+            color: white;
+        }
+        form input:required{
+            background: #FFFFFF url('icons/symbol.png') no-repeat right center;
+        }
+        form input:focus:invalid{
+            background: #FFFFFF url('icons/invalid.png') no-repeat right center;
+            border: solid #CD3F33 2px;
+            background-size:15px 15px;
+        }
+        form input:focus:valid{
+            background: #FFFFFF url('icons/valid.png') no-repeat right center;
+            background-size:15px 15px;
+            border: solid #2A9942 2px;
+        }
+        
+form input:hover+p{visibility:visible;
+margin-left:415px;
+margin-top:-55px;
+margin-right:40px;
+
+text-align:right;
+position:relative;
+clear:both;
+color:#CD3F33;}
+form p{
+visibility:hidden;}
+form >input:focus:valid+p{visibility:hidden;}

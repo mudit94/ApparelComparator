@@ -1,0 +1,16 @@
+SMAP
+category_jsp.java
+JSP
+*S JSP
+*F
++ 0 category.jsp
+category.jsp
++ 1 header2.jspf
+header2.jspf
+*L
+1,18:53
+1#1,28:71
+18#0,9:99
+27,7:109
+33,64:116
+*E

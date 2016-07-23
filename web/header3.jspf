@@ -1,0 +1,102 @@
+
+<script Language="JavaScript">
+   
+    function aboutus()
+   {
+       document.getElementById('contents').innerHTML=document.getElementById('aboutus').innerHTML;
+   }
+   
+   
+   function clothing(){
+       document.getElementById('tshirt').style.display="block";
+       document.getElementById('top').style.display="block";
+       document.getElementById('contents').innerHTML=document.getElementById('clothing').innerHTML;
+   }
+   function footwear(){
+       
+     document.getElementById('flats').style.display="block";
+            document.getElementById('heels').style.display="block";
+            document.getElementById('sports shoes').style.display="block";
+    document.getElementById('contents').innerHTML=document.getElementById('footwear').innerHTML;
+    }
+   function accessories(){
+       document.getElementById('wallet').style.display="block";
+       document.getElementById('handbags').style.display="block";
+       document.getElementById('contents').innerHTML=document.getElementById('accessories').innerHTML;
+   }
+   function changeDivision(){
+       var x=document.getElementById("search").value;
+       /*if (x=="")
+          document.getElementById('contents').innerHTML=document.getElementById('blank').innerHTML;
+       */
+        if(x=="tshirt"){
+           document.getElementById('top').style.display="none";
+           document.getElementById('contents').innerHTML=document.getElementById('tshirt').innerHTML;
+       }
+       else if(x=="top"){
+           document.getElementById('tshirt').style.display="none";
+            document.getElementById('contents').innerHTML=document.getElementById('top').innerHTML;
+       }
+       else if(x=="sports shoes"){
+            document.getElementById('flats').style.display="none";
+            document.getElementById('heels').style.display="none";
+           document.getElementById('contents').innerHTML=document.getElementById('sports shoes').innerHTML;
+       }
+      
+       else if(x=="heels"){
+            document.getElementById('sports shoes').style.display="none";
+            document.getElementById('flats').style.display="none";
+           document.getElementById('contents').innerHTML=document.getElementById('heels').innerHTML;
+       }
+         else if(x=="flats"){
+            document.getElementById('sports shoes').style.display="none";
+            document.getElementById('heels').style.display="none";
+           document.getElementById('contents').innerHTML=document.getElementById('flats').innerHTML;
+       }
+       else if(x=="wallet"){
+            document.getElementById('handbags').style.display="none";
+           document.getElementById('contents').innerHTML=document.getElementById('wallet').innerHTML;
+       }
+       else if(x=="handbags"){
+            document.getElementById('wallet').style.display="none";
+           document.getElementById('contents').innerHTML=document.getElementById('handbags').innerHTML;
+       }
+       else{
+           document.getElementById('contents').innerHTML=document.getElementById('error').innerHTML;
+       }
+   }
+</script>
+
+<body>
+  <div id="nav"><br>
+      
+            <ul class="topnav">
+                <form>
+            <input type="text" id="search" placeholder="Search your item here.." class="pure-input-rounded" />
+            <div id='button-holder' >
+             <img src='search.svg' onclick="changeDivision()"/>
+            </div>
+                </form>
+                
+                <li><a href="Logout"><h2>Logout</h2></a></li>
+                <li onclick="aboutus()"><a href="#aboutus"><h2>Contact</h2></a></li>
+                <li><a href="category.jsp"><h2>Category</h2></a></li>
+            
+            <li class="icon">
+            
+
+            </ul>
+     
+        </div>
+    
+    <div id="sd">
+    <ul class="sidenav">
+        <br>
+        <br>
+        <h2><li onclick="clothing()"><a href="#clothing">Clothing</a></li>
+        <li onclick="footwear()"><a href="#footwear">Footwear</a></li>
+        <li onclick="accessories()"><a href="#accessories">Accessories</a></li></h2>
+ 
+</ul>
+    </div>
+		</body>
